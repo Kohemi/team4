@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Swing : MonoBehaviour
 {
-    if 
+     
     // Start is called before the first frame update
     void Start()
     {
