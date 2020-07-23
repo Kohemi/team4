@@ -65,8 +65,8 @@
         "com.unity.modules.ui": "1.0.0"
       }
     },
-    "com.unity.xr.oculus.android": {
-      "version": "2.38.6",
+    "com.unity.xr.legacyinputhelpers": {
+      "version": "2.1.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
