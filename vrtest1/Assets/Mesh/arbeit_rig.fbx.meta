@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: 2f5c0b0e6185a2747adc749fc99827e8
+guid: 71868a4314391994b8dcd089798a3d4a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Head1
-    second: {fileID: 2100000, guid: 14dc89f5e5aea8b429955d8c013e2602, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: body1
-    second: {fileID: 2100000, guid: dc3536f98679db14486f691bcce6ce64, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: hand
-    second: {fileID: 2100000, guid: 4fbd3d43afd9b9c45bf3d70d7a022646, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0

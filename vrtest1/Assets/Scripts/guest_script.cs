@@ -15,28 +15,9 @@ public class guest_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            transform.position += Vector3.right;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            transform.position += Vector3.left;
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            transform.position += Vector3.forward;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            transform.position += Vector3.back;
-        }
 
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             
             if (gameObject.GetComponent<Animator>().GetBool("Handsup") == true)
@@ -68,7 +49,7 @@ public class guest_script : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.I))
         {
 
             if (gameObject.GetComponent<Animator>().GetBool("Happy") == true)
@@ -99,7 +80,7 @@ public class guest_script : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.O))
         {
 
             if (gameObject.GetComponent<Animator>().GetBool("Sad") == true)
@@ -127,7 +108,7 @@ public class guest_script : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.P))
         {
 
             if (gameObject.GetComponent<Animator>().GetBool("Walk") == true)
