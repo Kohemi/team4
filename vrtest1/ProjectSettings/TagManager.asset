@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - MainCharacterHand
+  - Roller
   layers:
   - Default
   - TransparentFX

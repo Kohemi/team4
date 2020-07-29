@@ -199,5 +199,10 @@ public class Dough : MonoBehaviour
 
 
         }
+        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        {
+            baked_sc = true;
+        }
     }
+
 }

@@ -16,6 +16,7 @@ permissions and limitations under the License.
 
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// Simple helper script that conditionally enables rendering of a controller if it is connected.
