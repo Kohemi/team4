@@ -15,6 +15,7 @@ public class TouchTomato : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
             Debug.Log("Trigger");

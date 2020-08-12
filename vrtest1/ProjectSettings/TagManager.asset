@@ -9,6 +9,8 @@ TagManager:
   - Roller
   - guest_emo
   - arbeit_emo
+  - Contents
+  - dough
   layers:
   - Default
   - TransparentFX
