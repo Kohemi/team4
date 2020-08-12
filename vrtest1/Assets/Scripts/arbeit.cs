@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class arbeit : MonoBehaviour
 {
+
+
+    public bool arbeit_handup;
+    public bool arbeit_happy;
+    public bool arbeit_sad;
+    public bool arbeit_walk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,113 +21,107 @@ public class arbeit : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.H))
+
+
+
+        if (
+        GameObject.Find("dough").GetComponent<Dough>().rolled_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().tomato_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().cheese_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().brocolli_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().mushroom_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().shrimp_sc == true ||
+        GameObject.Find("dough").GetComponent<Dough>().baked_sc == true
+        )
         {
+            GetComponent<arbeit>().arbeit_handup = false;
 
-            if (gameObject.GetComponent<Animator>().GetBool("dance") == true)
-            {
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[2].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-
-                gameObject.GetComponent<Animator>().SetBool("dance", false);
-            }
-
-            else if (gameObject.GetComponent<Animator>().GetBool("dance") == false)
-            {
-
-
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[2].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-
-                gameObject.GetComponent<Animator>().SetBool("dance", true);
-
-            }
         }
-
-        if (Input.GetKeyDown(KeyCode.J))
+        else
         {
+            GetComponent<arbeit>().arbeit_handup = true;
 
-            if (gameObject.GetComponent<Animator>().GetBool("happy") == true)
-            {
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[0].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-
-                gameObject.GetComponent<Animator>().SetBool("happy", false);
-            }
-
-            else if (gameObject.GetComponent<Animator>().GetBool("happy") == false)
-            {
-
-                gameObject.GetComponent<Animator>().SetBool("happy", true);
-
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[0].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-
-            if (gameObject.GetComponent<Animator>().GetBool("sad") == true)
-            {
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[4].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-
-                gameObject.GetComponent<Animator>().SetBool("sad", false);
-            }
-
-            else if (gameObject.GetComponent<Animator>().GetBool("sad") == false)
-            {
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[4].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[3].SetColor("_Color", new Vector4(0, 0, 0, 0));
-                transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_Color", new Vector4(0, 0, 0, 1));
-
-
-                gameObject.GetComponent<Animator>().SetBool("sad", true);
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-
-            if (gameObject.GetComponent<Animator>().GetBool("dance2") == true)
-            {
-                gameObject.GetComponent<Animator>().SetBool("dance2", false);
-            }
-
-            else if (gameObject.GetComponent<Animator>().GetBool("dance2") == false)
-            {
-
-                gameObject.GetComponent<Animator>().SetBool("dance2", true);
-            }
         }
 
 
+        if (GameObject.Find("dough").GetComponent<Dough>().baked_sc == true)
+        {
+            if (GameObject.Find("dough").GetComponent<Dough>().perfect_sc == true
+)
+            {
+
+                Debug.Log("dough_input");
+                GetComponent<arbeit>().arbeit_happy = true;
+            }
+            else if (GameObject.Find("dough").GetComponent<Dough>().perfect_sc == false)
+            {
+
+                GetComponent<arbeit>().arbeit_sad = true;
+
+            }
+
+        }
+
+        if (GameObject.Find("dough").GetComponent<Dough>().baked_sc == false)
+        {
+
+            GetComponent<arbeit>().arbeit_sad = false;
+            GetComponent<arbeit>().arbeit_happy = false;
+
+        }
+
+
+
+
+        if (GetComponent<arbeit>().arbeit_handup == true)
+        {
+
+            Debug.Log("handsup_input");
+
+            transform.GetComponent<Animator>().SetBool("dance", true);
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_cheer", false);
+        }
+
+        else
+        {
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_cheer", true);
+            gameObject.GetComponent<Animator>().SetBool("dance", false);
+            Debug.Log("handsup_output");
+
+        }
+
+        if (GetComponent<arbeit>().arbeit_happy == true)
+        {
+
+
+
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_happy", true);
+            transform.GetComponent<Animator>().SetBool("happy", true);
+        }
+
+        else
+        {
+
+            transform.GetComponent<Animator>().SetBool("happy", false);
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_happy", false);
+
+        }
+
+        if (GetComponent<arbeit>().arbeit_sad == true)
+        {
+
+
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_sad", true);
+            transform.GetComponent<Animator>().SetBool("sad", true);
+        }
+
+        else
+        {
+
+            transform.GetComponent<Animator>().SetBool("sad", false);
+            transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_sad", false);
+
+        }
 
     }
 }
