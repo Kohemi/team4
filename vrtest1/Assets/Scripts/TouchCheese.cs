@@ -15,15 +15,17 @@ public class TouchCheese : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.transform.tag == "MainCharacterHand")
+        if (other.gameObject.name == "dough")
         {
-           
-            GameObject.Find("dough").GetComponent<Dough>().cheese_sc = true;
-            
+            Debug.Log("Colli");
+            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+            {
+                Debug.Log("Stay and input");
+                GameObject.Find("dough").GetComponent<Dough>().cheese_sc = true;
+            }
 
         }
-
     }
 }

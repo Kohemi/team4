@@ -16,11 +16,11 @@ public class Rolling : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.transform.tag == "Roller")
+        if(collision.gameObject.name == "wheel")
         {
-            Debug.Log("Collision");
+            Debug.Log("Collision1");
             GameObject.Find("dough").GetComponent<Dough>().rolled_sc = true;
         }
     }

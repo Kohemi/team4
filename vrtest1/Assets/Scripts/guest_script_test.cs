@@ -72,7 +72,7 @@ public class guest_script_test : MonoBehaviour
         if (GetComponent<guest_script_test>().guest_handup == true)
         {
 
-            Debug.Log("handsup_input");
+           
 
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 0));
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 1));
@@ -87,7 +87,7 @@ public class guest_script_test : MonoBehaviour
             {
 
                 gameObject.GetComponent<Animator>().SetBool("Handsup", false);
-                Debug.Log("handsup_output");
+              
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[5].SetColor("_Color", new Vector4(0, 0, 0, 0));
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<SkinnedMeshRenderer>().materials[6].SetColor("_Color", new Vector4(0, 0, 0, 1));
 
