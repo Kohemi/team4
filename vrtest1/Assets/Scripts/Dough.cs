@@ -14,6 +14,7 @@ public class Dough : MonoBehaviour
     public bool perfect_sc;
     public bool perfect_baked_sc;
     public bool handin_sc;
+    public bool reset_sc;
 
 
     MeshRenderer mesh;

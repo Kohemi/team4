@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - MainCharacterHand
   - Roller
+  - guest_emo
+  - arbeit_emo
   layers:
   - Default
   - TransparentFX
