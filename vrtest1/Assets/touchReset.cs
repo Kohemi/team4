@@ -41,7 +41,6 @@ public class touchReset : MonoBehaviour
 
 
 
-            GameObject.Find("dough").GetComponent<Animator>().SetTrigger("dough_reset");
 
         }
     }

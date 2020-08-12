@@ -2447,6 +2447,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.79002476
       objectReference: {fileID: 0}
+    - target: {fileID: 7595749730313022903, guid: 71868a4314391994b8dcd089798a3d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: arbeit_emo
+      objectReference: {fileID: 0}
     - target: {fileID: 7880641696878657914, guid: 71868a4314391994b8dcd089798a3d4a,
         type: 3}
       propertyPath: m_LocalRotation.x
