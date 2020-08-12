@@ -50,7 +50,6 @@ public class arbeit : MonoBehaviour
 )
             {
 
-                Debug.Log("dough_input");
                 GetComponent<arbeit>().arbeit_happy = true;
             }
             else if (GameObject.Find("dough").GetComponent<Dough>().perfect_sc == false)
@@ -76,7 +75,6 @@ public class arbeit : MonoBehaviour
         if (GetComponent<arbeit>().arbeit_handup == true)
         {
 
-            Debug.Log("handsup_input");
 
             transform.GetComponent<Animator>().SetBool("dance", true);
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_cheer", false);
@@ -86,7 +84,6 @@ public class arbeit : MonoBehaviour
         {
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("ae_cheer", true);
             gameObject.GetComponent<Animator>().SetBool("dance", false);
-            Debug.Log("handsup_output");
 
         }
 

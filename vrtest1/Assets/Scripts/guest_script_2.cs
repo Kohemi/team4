@@ -53,7 +53,6 @@ public class guest_script_2 : MonoBehaviour
 )
             {
 
-                Debug.Log("dough_input");
                 GetComponent<guest_script_2>().guest_happy = true;
             }
             else if (GameObject.Find("dough").GetComponent<Dough>().perfect_sc == false)
@@ -81,7 +80,6 @@ public class guest_script_2 : MonoBehaviour
         if (GetComponent<guest_script_2>().guest_handup == true)
         {
 
-            Debug.Log("handsup_input");
 
             transform.GetComponent<Animator>().SetBool("Handsup", true);
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent <Animator>().SetBool("g_emo_handup", true);
@@ -91,7 +89,6 @@ public class guest_script_2 : MonoBehaviour
             {
             transform.GetChild(0).GetChild(1).GetChild(3).GetComponent<Animator>().SetBool("g_emo_handup", false);
             gameObject.GetComponent<Animator>().SetBool("Handsup", false);
-                Debug.Log("handsup_output");
 
         }
 
